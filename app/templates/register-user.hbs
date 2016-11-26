@@ -1,0 +1,20 @@
+<h3>Register User</h3>
+
+<div class="input-group">
+  <label>Username</label>
+  {{input  value=model.name}}
+</div>
+
+<div class="input-group">
+  <label>email address</label>
+  {{input  value=model.email_address}}
+</div>
+
+<div class="input-group">
+  <label>Password</label>
+  {{input type='password' value=model.password}}
+</div>
+
+<button {{action 'saveUser'}}>Register User</button>
+
+{{outlet}}

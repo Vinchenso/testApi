@@ -1,0 +1,13 @@
+<h2>Welcome to Middle Earth</h2>
+
+<div class="menu">
+  {{#if session.isAuthenticated}}
+    <button {{action 'logout'}}>Logout</button>
+  {{else}}
+    {{#link-to 'register-user'}}Register{{/link-to}}
+  {{/if}}
+</div>
+
+<div class="main">
+  {{outlet}}
+</div>
